@@ -1,0 +1,37 @@
+{
+  "name": "signalOracle",
+  "version": "1.0.0",
+  "description": "signal oracle based on Zap protocol and websocket ",
+  "main": "lib/index.js",
+  "author": "propulsor",
+  "license": "\"UNLICESNSED\"",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsc -t es2018",
+    "start-server": "node lib/server.js",
+    "start-user": "node lib/user.js",
+    "server": "run-s build start-server",
+    "user": "run-s build start-user"
+  },
+  "dependencies": {
+    "@zapjs/provider": "^2.0.23",
+    "binance-api-node": "^0.8.18",
+    "bluebird": "^3.5.3",
+    "express": "^4.16.4",
+    "ioredis": "^4.5.1",
+    "lodash": "^4.17.11",
+    "mathjs": "^5.4.2",
+    "npm-run-all": "^4.1.5",
+    "redis": "^2.8.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "socketio-auth": "^0.1.1",
+    "truffle-hdwallet-provider": "git+https://github.com/propulsor/truffle-hdwallet-provider.git",
+    "web3": "1.0.0-beta.37",
+    "web3-provider-engine": "^14.1.0",
+    "web3-utils": "^1.0.0-beta.37"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1"
+  }
+}
